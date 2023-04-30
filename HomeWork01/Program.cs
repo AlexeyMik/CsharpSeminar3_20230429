@@ -12,7 +12,6 @@ int ReadInt(string text) //проглатывает в стринг число, 
 }
 
 int num = ReadInt("Введите целое полож число: ");
-System.Console.WriteLine($" Input num={num}");
 if (num > 0)
 {
     for (int i = 1; i <= num; i++)
@@ -22,5 +21,5 @@ if (num > 0)
 }
 else
 {
-    System.Console.Write($" Input data is out of range");
+    System.Console.Write($" Input data {num} is out of range");
 }

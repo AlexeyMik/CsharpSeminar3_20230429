@@ -3,7 +3,7 @@
 //
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
-int ReadInt(string text) //проглатывает в стринг число, вводимое с консоли, возвращает ПОЛОЖИТЕЛЬНОЕ значение 
+int ReadInt(string text) //проглатывает в стринг число, вводимое с консоли, возвращает целочисленное значение 
 {
     System.Console.Write(text);
     //System.Console.WriteLine($" Input string= {Console.ReadLine()}");
@@ -11,7 +11,7 @@ int ReadInt(string text) //проглатывает в стринг число, 
     return Convert.ToInt32(Console.ReadLine());
 }
 
-int num = Math.Abs(ReadInt("Введите целое полож число: "));
+int num = ReadInt("Введите целое полож число: ");
 System.Console.WriteLine($" Input num={num}");
 if (num > 0)
 {
